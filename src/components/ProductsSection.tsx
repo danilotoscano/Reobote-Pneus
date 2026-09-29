@@ -10,6 +10,7 @@ export const ProductsSection: React.FC = () => {
       badge: 'Essencial',
       description: 'Variedade em medidas e modelos com alta durabilidade, aderência e estabilidade para você rodar com total segurança.',
       image: '/img-reobote/pneus.jpg',
+      fallback: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Car_tires.jpg',
     },
     {
       id: 'rodas',
@@ -17,6 +18,7 @@ export const ProductsSection: React.FC = () => {
       badge: 'Estilo & Performance',
       description: 'Modelos com acabamento premium, resistência reforçada e visual esportivo para transformar a estética do seu automóvel.',
       image: '/img-reobote/rodas.jpg',
+      fallback: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Brabus_Rim_Top_Marques_2019_IMG_1123.jpg',
     },
     {
       id: 'servicos',
@@ -24,6 +26,7 @@ export const ProductsSection: React.FC = () => {
       badge: 'Especializado',
       description: 'Montagem, balanceamento e alinhamento com cuidado técnico e equipamentos adequados para o melhor desempenho na pista.',
       image: '/img-reobote/servicos.jpg',
+      fallback: 'https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&w=600',
     },
   ];
 
@@ -68,8 +71,7 @@ export const ProductsSection: React.FC = () => {
                   alt={item.category}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   onError={(e) => {
-                    // Fallback visual temporário caso o arquivo ainda não exista com este nome
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1578844251758-2f71da64c96f?w=300&q=80';
+                    (e.target as HTMLImageElement).src = item.fallback;
                   }}
                 />
               </div>
