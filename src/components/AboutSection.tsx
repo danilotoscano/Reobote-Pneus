@@ -81,9 +81,9 @@ export const AboutSection: React.FC = () => {
           href={LINKS.WHATSAPP}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-dark-3d group w-full py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FFD000]"
+          className="btn-yellow-3d group w-full py-2.5 sm:py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md focus:outline-none focus-visible:ring-3 focus-visible:ring-[#FFD000]/50"
         >
-          <WhatsApp3DIcon size={16} className="transition-transform group-hover:scale-110" />
+          <WhatsApp3DIcon size={18} className="transition-transform group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]" />
           <span>Chamar no WhatsApp</span>
         </a>
       </div>

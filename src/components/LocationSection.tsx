@@ -97,7 +97,7 @@ export const LocationSection: React.FC = () => {
             href={LINKS.LOCATION}
             target="_blank"
             rel="noopener noreferrer"
-            className="group/btn relative w-full py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-white bg-gradient-to-r from-[#EA4335] via-[#D93025] to-[#B31412] hover:from-[#f04e40] hover:to-[#c61816] shadow-[0_4px_16px_rgba(234,67,53,0.3)] active:scale-[0.98] transition-all focus:outline-none focus-visible:ring-3 focus-visible:ring-[#EA4335]/50"
+            className="btn-yellow-3d group/btn relative w-full py-2.5 sm:py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md focus:outline-none focus-visible:ring-3 focus-visible:ring-[#FFD000]/50"
           >
             <Navigation className="w-3.5 h-3.5 transition-transform group-hover/btn:rotate-45" />
             <span>Abrir Localização</span>

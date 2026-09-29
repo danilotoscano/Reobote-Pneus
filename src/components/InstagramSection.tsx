@@ -83,10 +83,10 @@ export const InstagramSection: React.FC = () => {
               href={LINKS.INSTAGRAM}
               target="_blank"
               rel="noopener noreferrer"
-              className="group/btn relative w-full py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-white bg-gradient-to-r from-[#833AB4] via-[#E1306C] to-[#FD1D1D] hover:from-[#9542cd] hover:via-[#ec3b77] hover:to-[#ff3131] shadow-[0_4px_16px_rgba(225,48,108,0.3)] active:scale-[0.98] transition-all focus:outline-none focus-visible:ring-3 focus-visible:ring-[#E1306C]/50"
+              className="btn-yellow-3d group/btn relative w-full py-2.5 sm:py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md focus:outline-none focus-visible:ring-3 focus-visible:ring-[#FFD000]/50"
             >
               <span>Seguir no Instagram</span>
-              <ExternalLink className="w-3 h-3 transition-transform group-hover/btn:translate-x-0.5" />
+              <ExternalLink className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" />
             </a>
           </div>
         </div>
