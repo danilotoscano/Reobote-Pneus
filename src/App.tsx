@@ -84,7 +84,7 @@ export default function App() {
       {/* Persistent Floating WhatsApp CTA with 3D Gloss */}
       <FloatingWhatsApp />
 
-      {/* 1. Hero */}
+      {/* 1. Conteúdo inicial / Hero */}
       <div
         ref={(el) => {
           sectionRefs.current[0] = el;
@@ -95,7 +95,7 @@ export default function App() {
         <HeroSection onScrollNext={handleScrollNext} />
       </div>
 
-      {/* 2. Nossos produtos */}
+      {/* 2. Nossos Produtos */}
       <div
         ref={(el) => {
           sectionRefs.current[1] = el;
@@ -106,7 +106,7 @@ export default function App() {
         <ProductsSection />
       </div>
 
-      {/* 3. Avaliação Google */}
+      {/* 3. Avaliação no Google */}
       <div
         ref={(el) => {
           sectionRefs.current[2] = el;
@@ -117,7 +117,7 @@ export default function App() {
         <ReviewSection />
       </div>
 
-      {/* 4. Localização */}
+      {/* 4. Minha Localização / Visite Nossa Loja */}
       <div
         ref={(el) => {
           sectionRefs.current[3] = el;
@@ -128,7 +128,7 @@ export default function App() {
         <LocationSection />
       </div>
 
-      {/* 5. Instagram (antes da última logo) */}
+      {/* 5. Instagram */}
       <div
         ref={(el) => {
           sectionRefs.current[4] = el;
@@ -139,7 +139,7 @@ export default function App() {
         <InstagramSection />
       </div>
 
-      {/* 6. Sobre a empresa (depois do Instagram) */}
+      {/* 6. Sobre a Empresa */}
       <div
         ref={(el) => {
           sectionRefs.current[5] = el;
@@ -150,7 +150,7 @@ export default function App() {
         <AboutSection />
       </div>
 
-      {/* 7. Rodapé / Encerramento (com a última logo) */}
+      {/* 7. Logomarca inferior / Rodapé */}
       <div
         ref={(el) => {
           sectionRefs.current[6] = el;
