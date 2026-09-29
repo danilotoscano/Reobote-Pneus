@@ -18,7 +18,7 @@ export const ProductsSection: React.FC = () => {
       badge: 'Estilo & Performance',
       description: 'Modelos com acabamento premium, resistência reforçada e visual esportivo para transformar a estética do seu automóvel.',
       image: '/img-reobote/rodas.jpg',
-      fallback: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Brabus_Rim_Top_Marques_2019_IMG_1123.jpg',
+      fallback: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/Wheel%2C_IAA_2017%2C_Frankfurt_%281Y7A3040%29.jpg',
     },
     {
       id: 'servicos',
