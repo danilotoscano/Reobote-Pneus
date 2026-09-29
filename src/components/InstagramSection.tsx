@@ -21,7 +21,7 @@ export const InstagramSection: React.FC = () => {
           <span className="w-4 h-0.5 bg-[#E1306C] rounded-full shadow-[0_0_6px_#E1306C]" />
         </div>
 
-        <h2 className="text-xl sm:text-2xl font-black uppercase text-white tracking-wider mb-1">
+        <h2 className="text-[clamp(1.25rem,5.2vw,1.75rem)] font-black uppercase text-white tracking-wider mb-1 leading-tight">
           SIGA NOSSO INSTAGRAM
         </h2>
         <p className="text-[11px] sm:text-xs text-white/60 mb-4 max-w-xs">

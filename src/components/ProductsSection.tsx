@@ -44,7 +44,7 @@ export const ProductsSection: React.FC = () => {
           <span className="w-5 h-0.5 bg-[#FFD000] rounded-full shadow-[0_0_6px_#FFD000]" />
         </div>
 
-        <h2 className="text-2xl sm:text-3xl font-black uppercase text-white tracking-wider mb-1.5 text-center">
+        <h2 className="text-[clamp(1.25rem,5.2vw,1.875rem)] font-black uppercase text-white tracking-wider mb-1.5 text-center leading-tight">
           {COPY.PRODUCTS_TITLE}
         </h2>
         <p className="text-xs text-white/60 mb-5 text-center max-w-xs">

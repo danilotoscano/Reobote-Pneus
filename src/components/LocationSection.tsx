@@ -21,8 +21,8 @@ export const LocationSection: React.FC = () => {
           <span className="w-4 h-0.5 bg-[#EA4335] rounded-full shadow-[0_0_6px_#EA4335]" />
         </div>
 
-        {/* Title */}
-        <h2 className="text-xl sm:text-2xl font-black uppercase text-white tracking-wider mb-1">
+        {/* Title - Responsive with clamp */}
+        <h2 className="text-[clamp(1.25rem,5.2vw,1.75rem)] font-black uppercase text-white tracking-wider mb-1 leading-tight">
           {COPY.LOCATION_TITLE}
         </h2>
         <p className="text-[11px] sm:text-xs text-white/60 mb-4 max-w-xs">

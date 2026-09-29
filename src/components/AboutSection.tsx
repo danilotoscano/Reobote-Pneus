@@ -23,8 +23,8 @@ export const AboutSection: React.FC = () => {
           <span className="w-4 h-0.5 bg-[#FFD000] rounded-full shadow-[0_0_6px_#FFD000]" />
         </div>
 
-        {/* Title: REOBOTE PNEUS */}
-        <h2 className="text-xl sm:text-2xl font-black uppercase text-white tracking-wider mb-2">
+        {/* Title: REOBOTE PNEUS - Responsive with clamp */}
+        <h2 className="text-[clamp(1.25rem,5vw,1.75rem)] font-black uppercase text-white tracking-wider mb-2 leading-tight">
           {COPY.ABOUT_TITLE}
         </h2>
 

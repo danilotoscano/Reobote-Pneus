@@ -21,8 +21,8 @@ export const ReviewSection: React.FC = () => {
           <span className="w-4 h-0.5 bg-[#EA4335] rounded-full shadow-[0_0_6px_#EA4335]" />
         </div>
 
-        {/* Required Title */}
-        <h2 className="text-xl sm:text-2xl font-black uppercase text-white tracking-wider mb-1">
+        {/* Required Title - Responsive with clamp */}
+        <h2 className="text-[clamp(1.25rem,5.2vw,1.75rem)] font-black uppercase text-white tracking-wider mb-1 leading-tight">
           {COPY.REVIEW_TITLE}
         </h2>
 

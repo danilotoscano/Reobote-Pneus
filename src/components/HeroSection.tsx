@@ -49,15 +49,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollNext }) => {
           />
         </div>
 
-        {/* Beautiful Typography for Slogan */}
-        <h1 className="font-['Outfit',sans-serif] text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight uppercase mb-4 sm:mb-5 text-balance max-w-md">
-          <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+        {/* Beautiful Responsive Typography for Slogan */}
+        <h1 className="font-['Outfit',sans-serif] text-[clamp(1.125rem,4.4vw,1.875rem)] font-extrabold tracking-tight uppercase mb-3.5 sm:mb-4 leading-snug sm:leading-tight max-w-sm sm:max-w-md md:max-w-lg mx-auto text-center px-1">
+          <span className="inline-block text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
             Seus pneus em{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD000] via-[#FFF066] to-[#FFC400] text-glow-yellow">
+              boas mãos
+            </span>
+          </span>{' '}
+          <span className="inline-block text-white/90">
+            em Caucaia.
           </span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD000] via-[#FFF066] to-[#FFC400] text-glow-yellow">
-            boas mãos
-          </span>
-          <span className="text-white/90"> em Caucaia.</span>
         </h1>
 
         {/* Primary CTA: FALAR NO WHATSAPP - Decreased slightly for sleek proportion */}

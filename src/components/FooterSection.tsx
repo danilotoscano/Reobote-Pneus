@@ -71,16 +71,17 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onBackToTop }) => 
           />
         </div>
 
-        {/* High-Impact Slogan: “Rápido, seguro e sem enrolação.” */}
-        <div className="relative mb-5 px-2">
-          <span className="block text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-tight text-white leading-tight">
-            &ldquo;
+        {/* High-Impact Responsive Slogan: “Rápido, seguro e sem enrolação.” */}
+        <div className="relative mb-5 px-2 w-full">
+          <p className="block text-[clamp(1.125rem,4.6vw,1.875rem)] font-black uppercase tracking-tight text-white leading-snug sm:leading-tight text-center max-w-xs sm:max-w-md mx-auto">
+            <span className="text-[#FFD000]/60 select-none mr-1">&ldquo;</span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD000] via-[#FFE566] to-[#FFC400] text-glow-yellow">
-              {COPY.FOOTER_PHRASE}
+              <span className="inline-block">Rápido, seguro e</span>{' '}
+              <span className="inline-block">sem enrolação.</span>
             </span>
-            &rdquo;
-          </span>
-          <div className="w-12 h-1 bg-[#FFD000] mx-auto mt-3 rounded-full shadow-[0_0_8px_#FFD000]" />
+            <span className="text-[#FFD000]/60 select-none ml-1">&rdquo;</span>
+          </p>
+          <div className="w-12 h-1 bg-[#FFD000] mx-auto mt-2.5 rounded-full shadow-[0_0_8px_#FFD000]" />
         </div>
 
         {/* 4 Main Access Cards with 3D Icons - Scaled Proportional & Compact */}
