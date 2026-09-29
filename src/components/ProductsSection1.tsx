@@ -9,21 +9,21 @@ export const ProductsSection: React.FC = () => {
       category: 'Pneus',
       badge: 'Essencial',
       description: 'Variedade em medidas e modelos com alta durabilidade, aderência e estabilidade para você rodar com total segurança.',
-      image: '/pneus.jpg', // <-- Foto da pasta public
+      image: '/img-reobote/pneus.jpg',
     },
     {
       id: 'rodas',
       category: 'Rodas',
       badge: 'Estilo & Performance',
       description: 'Modelos com acabamento premium, resistência reforçada e visual esportivo para transformar a estética do seu automóvel.',
-      image: '/rodas.jpg', // <-- Foto da pasta public
+      image: '/img-reobote/rodas.jpg',
     },
     {
       id: 'servicos',
       category: 'Serviços Automotivos',
       badge: 'Especializado',
       description: 'Montagem, balanceamento e alinhamento com cuidado técnico e equipamentos adequados para o melhor desempenho na pista.',
-      image: '/servicos.jpg', // <-- Foto da pasta public
+      image: '/img-reobote/servicos.jpg',
     },
   ];
 
@@ -51,7 +51,7 @@ export const ProductsSection: React.FC = () => {
           Qualidade certificada e suporte completo para seu trajeto.
         </p>
 
-        {/* Product Cards Grid com Fotos Reais */}
+        {/* Product Cards Grid com Fotos Reais da subpasta img-reobote */}
         <div className="flex flex-col gap-3 w-full mb-4">
           {products.map((item) => (
             <div
@@ -61,14 +61,14 @@ export const ProductsSection: React.FC = () => {
               {/* Corner Yellow Glow Indicator */}
               <div className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-bl from-[#FFD000]/15 to-transparent pointer-events-none" />
 
-              {/* Foto Real do Produto com Borda e Brilho */}
-              <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden shrink-0 border border-[#FFD000]/20 shadow-md">
+              {/* Foto Real do Produto com Moldura e Efeito Hover */}
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-lg overflow-hidden shrink-0 border border-[#FFD000]/20 shadow-md bg-[#111]">
                 <img
                   src={item.image}
                   alt={item.category}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   onError={(e) => {
-                    // Fallback caso a imagem ainda não tenha sido enviada
+                    // Fallback visual temporário caso o arquivo ainda não exista com este nome
                     (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1578844251758-2f71da64c96f?w=300&q=80';
                   }}
                 />
