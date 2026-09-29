@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-deep: #050505;
+    --color-bg-card: #101010;
+    --color-bg-card-hover: #161616;
+    --color-yellow: #FFD000;
+    --color-yellow-glow: #FFC400;
+    --color-text-primary: #FFFFFF;
+    --color-text-muted: #D9D9D9;
+  }
+
+  body {
+    background-color: var(--color-bg-deep);
+    color: var(--color-text-muted);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Chakra Petch', 'Cabinet Grotesk', system-ui, sans-serif;
+  }
+}
+
+/* Custom Automotive Background Patterns */
+.bg-tire-track {
+  background-image: radial-gradient(rgba(255, 208, 0, 0.08) 1px, transparent 1px),
+    radial-gradient(rgba(255, 208, 0, 0.04) 1px, #050505 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.bg-carbon {
+  background: 
+    linear-gradient(27deg, #121212 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #121212 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #161616 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #161616 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #0d0d0d 10px, #080808 10px);
+  background-size: 20px 20px;
+}
+
+.bg-radial-hero {
+  background: radial-gradient(circle at 50% 28%, rgba(255, 208, 0, 0.16) 0%, rgba(255, 196, 0, 0.03) 45%, transparent 70%);
+}
+
+.bg-radial-accent {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 208, 0, 0.12) 0%, transparent 60%);
+}
+
+/* 3D Glass & Metallic Shimmers */
+.glass-panel {
+  background: linear-gradient(135deg, rgba(28, 28, 28, 0.7) 0%, rgba(14, 14, 14, 0.85) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  border-color: rgba(255, 208, 0, 0.4);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 208, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* 3D Gold / Yellow Automotive Button */
+.btn-yellow-3d {
+  background: linear-gradient(180deg, #FFE033 0%, #FFD000 48%, #E5A800 100%);
+  color: #050505;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 6px 0 #997000, 0 12px 24px rgba(255, 208, 0, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-yellow-3d:hover {
+  background: linear-gradient(180deg, #FFF066 0%, #FFD81A 48%, #F2B400 100%);
+  box-shadow: 0 6px 0 #997000, 0 16px 30px rgba(255, 208, 0, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+.btn-yellow-3d:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #997000, 0 6px 12px rgba(255, 208, 0, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* 3D Dark Carbon Button */
+.btn-dark-3d {
+  background: linear-gradient(180deg, #262626 0%, #151515 50%, #0d0d0d 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 0 #050505, 0 10px 20px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-dark-3d:hover {
+  border-color: rgba(255, 208, 0, 0.5);
+  color: #FFD000;
+  box-shadow: 0 5px 0 #050505, 0 14px 28px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 208, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+.btn-dark-3d:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #050505, 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Subtle Shimmer Ray */
+@keyframes shimmer-sweep {
+  0% { transform: translateX(-100%) rotate(25deg); }
+  100% { transform: translateX(250%) rotate(25deg); }
+}
+
+.animate-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  animation: shimmer-sweep 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+/* Hide scrollbar for clean carousel feel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Text glow */
+.text-glow-yellow {
+  text-shadow: 0 0 20px rgba(255, 208, 0, 0.4), 0 0 40px rgba(255, 208, 0, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

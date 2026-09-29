@@ -1,0 +1,8 @@
+{
+  "name": "Reobote Pneus - Biosite Oficial",
+  "description": "Reobote Pneus — qualidade, confiança e atendimento rápido em Caucaia. Fale conosco pelo WhatsApp, siga nosso Instagram, avalie no Google ou encontre nossa localização.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
